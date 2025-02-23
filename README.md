@@ -1,11 +1,21 @@
-> # ffuf_tool
-> Bu skript `ffuf` alətindən istifadə edərək müəyyən URL-ləri fuzz etmek üçündür.
-> 
-> ## İstifadə qaydası 
-> 
-> 1. Terminal aç!
-> 2. Skripti bele işe salın:
->   ```bash
->   python3 ffuf_tool.py -u URL -w wordlist.txt -o results.json
->
-> # URL yerinə istənilən URL daxil edib fuzzing testi ede bilersiz
+># FFUF Avtomatlaşdırma Skripti
+
+Bu Python skripti, FFUF alətini avtomatik işə salmaq üçün hazırlanıb. 
+Skript URL və wordlist qəbul edərək FFUF-u çalışdırır və nəticələri fayla yazır.
+
+# 📌 Tələblər
+- *Python 3* (Yoxlamaq üçün: python3 --version)
+- *FFUF* (Yoxlamaq üçün: ffuf -V)
+- *Wordlist Faylı* (Məsələn: /usr/share/wordlists/dirb/common.txt)
+
+# 🔧 Qurulum
+FFUF-un quraşdırılması üçün:
+```bash
+sudo apt update && sudo apt install ffuf -y
+
+
+# **İstifadə Qaydaları**
+
+python3 ffuf_tool.py -u URL -w /usr/share/wordlists/dirb/common.txt -o results
+
+# İstənilən URL  seçə bilərsiz
