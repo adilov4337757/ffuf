@@ -8,4 +8,4 @@
 >   ```bash
 >   python3 ffuf_tool.py -u URL -w wordlist.txt -o results.json
 >
->  URL yerinə istənilən URL daxil edib fuzzing testi ede bilersiz
+> # URL yerinə istənilən URL daxil edib fuzzing testi ede bilersiz
